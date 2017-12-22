@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
+"http://www.w3.org/TR/html4/loose.dtd"> 
+<html>
+ <head>
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+     <title>js primo funcion</title>
+
+     <script type="text/javascript">
+         
+        var primo=1
+        var contador=0
+         
+do{
+      
+        var num=parseInt(prompt('Introduzca un numero', ''));
+
+            if (num == 1 || num == 2) {
+            alert('El numero ' +num+ ' es primo');
+            var primo=1;
+            contador++;
+            }
+
+             else{
+            for (var i=2;i<num;i++) {
+
+                        if(num % i == 0) {
+                             alert('El valor ' +num+ ' no es un numero primo'); 
+                             var primo=0
+                             window.alert("su puntuacion es " + contador );  
+                            console.log("vuelta if" +i);
+                             break; 
+                             }
+                                
+                        else{ 
+                   console.log("vuelta else" +i);
+                   }   
+                }
+             if(primo==1){ alert('El numero ' +num+ ' es primo'); 
+                    var primo=1;
+                    contador++;}    
+             }
+    }
+
+             while(primo==1)
+             
+             
+            
+ </script>
+ </head>
+ <body></body>
+ </html
